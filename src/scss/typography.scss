@@ -1,0 +1,43 @@
+$text-dark: #7F7F7F;
+$text-light: #B4B4B4;
+
+.typo-hero {
+  color: $text-dark;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.typo-title {
+  color: $text-dark;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.typo-subheader {
+  color: $text-dark;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.typo-quote {
+  color: $text-dark;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.typo-large-body {
+  color: $text-dark;
+  font-size: 14px;
+}
+
+.typo-secondary-body {
+  color: $text-light;
+  font-size: 12px;
+}
+
+.typo-placeholder {
+  color: $text-light;
+  font-style: italic;
+  font-size: 12px;
+}

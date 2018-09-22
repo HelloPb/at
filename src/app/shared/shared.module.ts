@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AtFormModule } from './at-form/modules';
+import { AtElementsModule } from './elements/modules';
 
 @NgModule({
   exports: [
     CommonModule,
-    AtFormModule
+    AtElementsModule
   ]
 })
 export class SharedModule { }

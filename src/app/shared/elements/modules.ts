@@ -18,4 +18,4 @@ import { TextModule } from './text/text.module';
     TextModule
   ],
 })
-export class AtFormModule { }
+export class AtElementsModule { }
