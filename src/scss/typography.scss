@@ -1,43 +1,47 @@
-$text-dark: #7F7F7F;
-$text-light: #B4B4B4;
+.atc-typo {
 
-.typo-hero {
-  color: $text-dark;
-  font-weight: bold;
-  font-size: 40px;
-}
+  font-size: $text-normal;
+  font-style: normal;
+  font-weight: normal;
 
-.typo-title {
-  color: $text-dark;
-  font-weight: bold;
-  font-size: 30px;
-}
+  &.hero {
+    color: $text-dark;
+    font-size: $text-hero;
+    font-weight: bold;
+  }
 
-.typo-subheader {
-  color: $text-dark;
-  font-weight: 500;
-  font-size: 20px;
-}
+  &.title {
+    color: $text-dark;
+    font-size: $text-title;
+    font-weight: bold;
+  }
 
-.typo-quote {
-  color: $text-dark;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 20px;
-}
+  &.subtitle {
+    color: $text-dark;
+    font-size: $text-subtitle;
+    font-weight: normal;
+  }
 
-.typo-large-body {
-  color: $text-dark;
-  font-size: 14px;
-}
+  &.quote {
+    color: $text-dark;
+    font-size: $text-subtitle;
+    font-weight: normal;
+    font-style: italic;
+  }
 
-.typo-secondary-body {
-  color: $text-light;
-  font-size: 12px;
-}
+  &.normal {
+    color: $text-dark;
+    font-size: $text-normal;
+  }
 
-.typo-placeholder {
-  color: $text-light;
-  font-style: italic;
-  font-size: 12px;
+  &.small {
+    color: $text-light;
+    font-size: $text-small;
+  }
+
+  &.placeholder {
+    color: $text-light;
+    font-size: $text-small;
+    font-style: italic;
+  }
 }

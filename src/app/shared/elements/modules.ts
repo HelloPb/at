@@ -5,7 +5,7 @@ import { NumberModule } from './number/number.module';
 import { PasswordModule } from './password/password.module';
 import { RadioModule } from './radio/radio.module';
 import { SelectModule } from './select/select.module';
-import { TextModule } from './text/text.module';
+import { TextboxModule } from './textbox/textbox.module';
 
 @NgModule({
   exports: [
@@ -15,7 +15,7 @@ import { TextModule } from './text/text.module';
     PasswordModule,
     RadioModule,
     SelectModule,
-    TextModule
+    TextboxModule
   ],
 })
 export class AtElementsModule { }
