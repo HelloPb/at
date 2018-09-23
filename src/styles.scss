@@ -1,10 +1,16 @@
+* {
+    outline: none;
+}
+
 @import './root.scss';
 
 // Typography
 @import './scss/typography.scss';
 
-// Components
-@import './scss/components/buttons.scss';
-
 // Effects
 @import './scss/effects.scss';
+
+// Components
+@import './scss/components/buttons.scss';
+@import './scss/components/text.scss';
+@import './scss/components/border.scss';

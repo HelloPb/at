@@ -1,13 +1,13 @@
 .atc-text {
+  color: $brand-dark;
+  font-size: $text-normal;
+  font-style: normal;
+  font-weight: normal;
+}
 
+.atc-text-dark {
   color: $brand-dark;
   font-size: $text-normal;
   font-style: normal;
   font-weight: bold;
-  
-  &.regular {
-    font-weight: normal;
-    color: $brand-light; 
-  }
-
 }

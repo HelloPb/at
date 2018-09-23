@@ -1,47 +1,48 @@
-.atc-typo {
-
-  font-size: $text-normal;
+.atc-typo-hero {
+  color: $text-dark;
+  font-size: $text-hero;
+  font-weight: bold;
   font-style: normal;
+}
+
+.atc-typo-title {
+  color: $text-dark;
+  font-size: $text-title;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.atc-typo-subtitle {
+  color: $text-dark;
+  font-size: $text-subtitle;
   font-weight: normal;
+  font-style: normal;
+}
 
-  &.hero {
-    color: $text-dark;
-    font-size: $text-hero;
-    font-weight: bold;
-  }
+.atc-typo-quote {
+  color: $text-dark;
+  font-size: $text-subtitle;
+  font-weight: normal;
+  font-style: italic;
+}
 
-  &.title {
-    color: $text-dark;
-    font-size: $text-title;
-    font-weight: bold;
-  }
+.atc-typo-normal {
+  color: $text-dark;
+  font-size: $text-normal;
+  font-weight: normal;
+  font-style: normal;
+}
 
-  &.subtitle {
-    color: $text-dark;
-    font-size: $text-subtitle;
-    font-weight: normal;
-  }
+.atc-typo-small {
+  color: $text-light;
+  font-size: $text-small;
+  font-weight: normal;
+  font-style: normal;
+}
 
-  &.quote {
-    color: $text-dark;
-    font-size: $text-subtitle;
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  &.normal {
-    color: $text-dark;
-    font-size: $text-normal;
-  }
-
-  &.small {
-    color: $text-light;
-    font-size: $text-small;
-  }
-
-  &.placeholder {
-    color: $text-light;
-    font-size: $text-small;
-    font-style: italic;
-  }
+.atc-typo-placeholder {
+  color: $text-light;
+  font-size: $text-small;
+  font-weight: normal;
+  font-style: italic;
 }

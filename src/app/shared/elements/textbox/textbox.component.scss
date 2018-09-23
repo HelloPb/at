@@ -1,7 +1,9 @@
-@import '/root.scss';
+@import 'src/root.scss';
 
 .atc-textbox {
-    border: 1px solid $mid;
-    color: $dark;
-    font-size: 14px;
+  position: relative;
+
+  input {
+    height: 50px;
+  }
 }
