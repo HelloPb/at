@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, ElementRef, Directive, HostListener } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ElementRef, Directive, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'at-textbox',
@@ -7,6 +7,8 @@ import { Component, OnInit, ViewEncapsulation, ElementRef, Directive, HostListen
   encapsulation: ViewEncapsulation.None
 })
 export class TextboxComponent implements OnInit {
+
+  @Input() key;
 
   constructor() { }
 
