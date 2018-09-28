@@ -1,0 +1,19 @@
+@import 'src/root.scss';
+
+.atc-textbox {
+  position: relative;
+
+  input {
+    height: 50px;
+    width: 100%;
+    padding-right: 40px
+  }
+
+  i {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+}

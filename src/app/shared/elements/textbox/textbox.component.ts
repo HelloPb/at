@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, ElementRef, Directive, HostListener, Input } from '@angular/core';
+import { addRemoveClasses } from '../../utils/util';
 
 @Component({
   selector: 'at-textbox',
@@ -8,31 +9,11 @@ import { Component, OnInit, ViewEncapsulation, ElementRef, Directive, HostListen
 })
 export class TextboxComponent implements OnInit {
 
-  @Input() key;
+  @Input() key = '';
 
   constructor() { }
 
   public ngOnInit(): void {
   }
 
-}
-
-@Directive({
-  selector: '[atEffects]'
-})
-export class EffectsDirective {
-
-  constructor(private el: ElementRef) {
-  }
-
-  @HostListener('focus', ['$event.target'])
-  onFocus(ele: any) {
-    ele.classList.add('atc-border-focus');
-    ele.classList.remove('atc-border');
-  }
-  @HostListener('focusout', ['$event.target'])
-  onFocusout(ele: any) {
-    ele.classList.remove('atc-border-focus');
-    ele.classList.add('atc-border');
-  }
 }

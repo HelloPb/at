@@ -7,11 +7,8 @@
 // Typography
 @import './scss/typography.scss';
 
-// Effects
-@import './scss/effects.scss';
-
 // Components
-@import './scss/common.scss';
+@import './scss/base.scss';
 @import './scss/components/buttons.scss';
 @import './scss/components/text.scss';
 @import './scss/components/border.scss';

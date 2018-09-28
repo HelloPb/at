@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TextboxComponent, EffectsDirective } from './textbox.component';
+import { TextboxComponent, TextboxDirective } from './textbox.component';
 import { ErrorModule } from '../../components/error/error.module';
 
 @NgModule({
@@ -8,7 +8,7 @@ import { ErrorModule } from '../../components/error/error.module';
     CommonModule,
     ErrorModule
   ],
-  declarations: [TextboxComponent, EffectsDirective],
+  declarations: [TextboxComponent, TextboxDirective],
   exports: [TextboxComponent]
 })
 export class TextboxModule { }

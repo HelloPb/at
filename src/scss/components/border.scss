@@ -1,7 +1,12 @@
 .atc-border {
   border: 1px solid $brand-mid;
-}
 
-.atc-border-focus {
-  border: 1px solid $brand-normal;
+  &.atc-border-error {
+    border-color: $brand-error;
+  }
+
+  &:focus {
+    border-color: $brand-normal;
+  }
+
 }
