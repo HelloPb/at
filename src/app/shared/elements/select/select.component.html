@@ -1,3 +1,5 @@
-<p>
-  select works!
-</p>
+<div class="atc-select" (click)="collapsed=!collapsed;">
+  <input class="atc-text atc-border" [formControl]="ngControl.control" atInputStatus>
+  <i class="fa atc-dark" [ngClass]="{ 'fa-caret-down': collapsed, 'fa-caret-up': !collapsed }" aria-hidden="true"></i>
+  <at-error *ngIf="key"></at-error>
+</div>

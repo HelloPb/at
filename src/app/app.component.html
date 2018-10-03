@@ -1,3 +1,6 @@
-<div style="width: 300px">
-  <at-textbox></at-textbox>
-</div>
+<form [formGroup]="fg">
+  <div style="width: 300px">
+    <at-textbox formControlName="gg"></at-textbox>
+    <at-select formControlName="gg"></at-select>
+  </div>
+</form>

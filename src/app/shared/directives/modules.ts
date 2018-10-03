@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { InputStatusModule } from './input-status/input-status.directive';
+import { InputStatusModule } from './input-status/input-status.module';
 
 @NgModule({
   exports: [

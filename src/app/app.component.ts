@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'at-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'alltray';
+  /**
+   *
+   */
+
+  fg;
+  constructor(private fb: FormBuilder) {
+    this.fg = this.fb.group({ gg: '' });
+  }
 }

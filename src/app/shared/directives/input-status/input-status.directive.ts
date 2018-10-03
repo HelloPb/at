@@ -1,5 +1,4 @@
-import { CommonModule } from '@angular/common';
-import { Directive, NgModule, ElementRef, OnInit, OnDestroy } from '@angular/core';
+import { Directive, ElementRef, OnInit, OnDestroy } from '@angular/core';
 import { NgControl } from '@angular/forms';
 import { addRemoveClasses } from '../../utils/util';
 import { CommonProperties } from '../../classes/common-properties';
@@ -31,14 +30,3 @@ export class InputStatusDirective extends CommonProperties implements OnInit, On
   }
 
 }
-
-@NgModule({
-  declarations: [
-    CommonModule,
-    InputStatusDirective
-  ],
-  exports: [
-    InputStatusDirective
-  ]
-})
-export class InputStatusModule { }

@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewEncapsulation, ElementRef, Directive, HostListener, Input } from '@angular/core';
-import { addRemoveClasses } from '../../utils/util';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { NgControl } from '@angular/forms';
 
 @Component({
   selector: 'at-textbox',
@@ -9,11 +9,32 @@ import { addRemoveClasses } from '../../utils/util';
 })
 export class TextboxComponent implements OnInit {
 
-  @Input() key = '';
+  @Input() placeholder = '';
+  @Input() label = undefined;
+  @Input() key = undefined;
+  @Input() value = '';
+  @Input() maxlength;
 
-  constructor() { }
-
-  public ngOnInit(): void {
+  constructor(public ngControl: NgControl) {
+    if (this.ngControl != null) { this.ngControl.valueAccessor = this; }
   }
 
+  private propagateChange = (_: any) => { };
+
+  public writeValue(value: any): void {
+  }
+
+  public registerOnChange(fn: any): void {
+    this.propagateChange = fn;
+  }
+
+  public registerOnTouched(fn: any): void {
+  }
+
+  public setDisabledState(isDisabled: boolean): void {
+  }
+
+  public ngOnInit(): void {
+
+  }
 }

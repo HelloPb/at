@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TextboxComponent, TextboxDirective } from './textbox.component';
-import { ErrorModule } from '../../components/error/error.module';
+import { TextboxComponent } from './textbox.component';
+import { ErrorModule } from '../../components/exports';
+import { ReactiveFormsModule } from '@angular/forms';
+import { InputStatusModule } from '../../directives/exports';
 
 @NgModule({
   imports: [
     CommonModule,
-    ErrorModule
+    ReactiveFormsModule,
+    ErrorModule,
+    InputStatusModule
   ],
-  declarations: [TextboxComponent, TextboxDirective],
+  declarations: [TextboxComponent],
   exports: [TextboxComponent]
 })
 export class TextboxModule { }
